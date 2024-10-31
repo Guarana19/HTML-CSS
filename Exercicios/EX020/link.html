@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZ ADOS
+        #   = id
+        .   = class
+        :   = peseudo-class
+        ::  = Pseudo-element
+        >   = children
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: aquamarine;
+        }
+
+        a::after{
+            content: ' [link] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>LInks</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara">Git hub</a></li>
+        <li><a href="https://www.youtube.com/@programadornumero1">Canal do Youtube</a></li>
+        <li><a href="https://cursos.dankicode.com/login">site</a></li>
+    </ul>
+</body>
+</html>
