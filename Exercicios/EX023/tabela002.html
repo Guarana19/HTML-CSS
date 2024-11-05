@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,10 +20,33 @@
             padding: 10px;
         }
 
+        caption{
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /*efeito zebrado*/
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: lightgreen;
+        }
+
+        tbody > tr:nth-child(2n){ /* 2n */
+            background-color: lightcyan;
+        }
+        /*efeito zebrado*/
 
         td.num{
             text-align: right;
@@ -33,6 +57,7 @@
     <h1>Uso de tabelas</h1>
     <!--
         anatomia da tabela grande
+        <caption>
         <Thead>
             tr, td, th
         <tbody>
@@ -42,10 +67,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
@@ -61,14 +87,128 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 219 679</td>
             </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="rol">Total de Habitantes</th>
                 <td class="num"><strong>84 515 561</strong></td>
             </tr>
         </tfoot>
-
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque dolores cupiditate itaque voluptatibus. Aliquam debitis modi iusto dolores consequuntur sapiente mollitia quae architecto ratione. Temporibus quisquam ut sunt labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat placeat consectetur vel aperiam laudantium maiores ratione ipsa aliquam tempora numquam odio omnis, perferendis amet quidem inventore fugiat quos! Error!</p>
 </body>
 </html>
