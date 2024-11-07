@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         iframe{
-            width: 500px;
+            width: 90vw;
             height: 400px;
+            border: 2px solid black;
         }
 
-        iframe{
-            display: block;
-            margin: auto;
-            
-        }
     </style>
 </head>
 <body>
-    <h1>Testando iframe</h1>
+    <h1>Faça uma escolha</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad corporis, commodi ipsa soluta, natus placeat hic qui quos ipsam, error delectus nobis voluptate. Consequuntur, cumque repellat. Dolores eius accusamus pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laudantium ducimus porro sit modi culpa hic quibusdam tenetur maxime. Incidunt, culpa iusto! Ab libero nesciunt et adipisci nemo omnis amet!</p>
 
-    <iframe src="paginas-extras/pag001.html" frameborder="0" width="500" height="500">
-        <p>infezlimente seu dispositivo não é compativel</p>
-    </iframe>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira pagina</a></li>
+    </ul>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere non eius voluptas quas nulla cumque! Earum ut ducimus perferendis maiores officia commodi ipsum, dolorem sapiente. Facilis deleniti magni delectus tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non aliquid facere cum, alias dolorum quibusdam repellendus nihil aut dicta commodi aperiam, culpa voluptate neque, officia error illo autem dolor mollitia.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" name="frame">
+        <p>não compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure animi doloremque aliquid, ea explicabo, at laborum repellat reprehenderit voluptatem ipsum maxime amet totam perferendis possimus! Iusto veniam placeat doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatem ad, magnam quia voluptatum numquam, quos, deleniti cupiditate ea aut atque incidunt hic eaque veritatis perspiciatis quae! Consequatur, reprehenderit. Quod!</p>
 </body>
 </html>
