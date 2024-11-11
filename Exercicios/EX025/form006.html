@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de Formulario</h1>
+   
+    <form action="cadastro" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de satisfação:</label>
+            <input type="range" name="nivel" id="inivel" value="100">
+        </p>
+
+        <input type="file" name="foto" id="ifoto">
+
+    </form>
+</body>
+</html>
