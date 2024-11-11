@@ -13,6 +13,40 @@
 </head>
 <body>
     <h1>teste de Formulario</h1>
-   
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="BH">Baiha</option>
+                    <option value="PB">Paraiba</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lsdprof">
+            <datalist id="lsdprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Programador</option>
+                <option value="VEN">Vendedor</option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="imsg">Menssagem:</label><br>
+            <textarea name="msg" id="imsg" cols="40" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
