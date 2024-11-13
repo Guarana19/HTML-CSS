@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+/*Typical device breakpoints
+-----------------------------
+Celular extra pequeno (retrato) : 320px – 480px
+Pequeno celular (paisagem) : 481px – 600px
+Tablets pequenos (retrato) : 601px – 768px
+Tablets grandes (paisagem) : 769px – 1024px
+Pequenos desktops e laptops : 1025px – 1280px
+Grandes desktops e telas de alta resolução : 1281px – 1440px
+Desktops extragrandes : 1441px e mais*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px){/*TABLET*/
+    body{
+        background-image: url(../Imagens/back-tablet.jpg);
+    }   
+    img#celular{display: none;}
+    img#tablet{display: block;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){/*DESKTOP*/
+    body{
+        background-image: url(../Imagens/back-pc.jpg);
+    }
+    img#celular{display: none;}
+    img#pc{display: block;}
+    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px){/*GRANDES TELAS*/
+    body{
+        background-image: url(../Imagens/back-tv.jpg);
+    }
+    img#celular{display: none;}
+    img#tv{display: block;}
+
+}
